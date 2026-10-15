@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob: https://*.supabase.co https://cdn.discordapp.com https://media.discordapp.net; media-src 'self' blob: https://*.supabase.co; connect-src 'self' https://*.supabase.co wss://*.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0a0b0d">
+  <meta name="color-scheme" content="dark">
+  <title>YARO Studio</title>
+  <link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+  <style>
+    html, body { margin: 0; background: #0a0b0d; color: #eceef1; }
+    .boot-static { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 24px; box-sizing: border-box; text-align: center; font-family: system-ui, 'Segoe UI', Tahoma, sans-serif; }
+    .boot-static svg { width: 44px; height: 44px; color: #ff7a2f; }
+    .boot-help { max-width: 440px; font-size: 14px; line-height: 1.9; color: #a7aebb; visibility: hidden; animation: bootHelp 0s 12s forwards; }
+    .boot-help b { color: #eceef1; }
+    @keyframes bootHelp { to { visibility: visible; } }
+  </style>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="config.js"></script>
+  <script src="vendor/supabase.js" defer></script>
+  <script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><div class="backdrop-grid"></div><div class="backdrop-glow"></div><div class="backdrop-noise"></div></div>
+  <div id="app">
+    <div class="boot boot-static">
+      <svg class="boot-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 42 14v20L24 44 6 34V14z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M24 24 42 14M24 24v20M24 24 6 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" opacity=".55"/></svg>
+      <p class="boot-help">الموقع لم يكتمل تحميله.<br>غالباً لم تُرفع كل الملفات — تأكد أن المجلدين <b>assets</b> و <b>vendor</b> مرفوعان بجانب <b>index.html</b> و <b>config.js</b>، ثم حدّث الصفحة.</p>
+    </div>
+  </div>
+  <noscript><p class="noscript">هذا الموقع يحتاج تفعيل JavaScript.</p></noscript>
+</body>
+</html>
